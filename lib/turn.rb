@@ -18,6 +18,7 @@ def turn(board)
   if valid_move?(board, index) == true
     move(board, index, players_token = "X")
   else
+    puts "Invalid move. Please try again."
     
 end
 
