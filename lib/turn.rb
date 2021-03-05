@@ -55,7 +55,8 @@ def turn(board)
     move(board, index, players_token = "X")
     display_board
   else
-    
+    turn(board)
+  end
 end
 
 
