@@ -53,7 +53,7 @@ def turn(board)
   index = input.to_i - 1
   if valid_move?(board,index) == true
     move(board, index, players_token = "X")
-    display_board
+    display_board(board)
   else
     turn(board)
   end    
