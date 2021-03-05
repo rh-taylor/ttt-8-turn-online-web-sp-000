@@ -60,7 +60,11 @@ def turn(board)
 end
 
 
-
+def input_to_index(user_input)
+  index = user_input.to_i
+  index -= 1
+  return index
+end
 
 #get input
 #convert input to index
