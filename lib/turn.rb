@@ -10,15 +10,6 @@ def display_board(board)
 end
 
 
-#Turn
-def turn(board)
-  puts "Please enter 1-9:"
-  input = gets.strip
-  input_to_index(input)
-  if valid_move?
-end
-
-
 #Converting user input to an array index
 def input_to_index(input)
   index = input.to_i - 1
@@ -53,6 +44,10 @@ end
 def move(board, index, players_token = "X")
   board[index] = players_token
 end
+
+
+
+
 
 
 
